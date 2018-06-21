@@ -21,14 +21,14 @@
 </head>
 <body>
     <aside>
-        <ul>
+        <!-- <ul>
             <li>
                 <a href="https://seamount-knight.github.io/" target="_blank">Blog</a>
             </li>
             <li>
                 <a href="https://github.com/seamount-knight" target="_blank">GitHub</a>
             </li>
-        </ul>
+        </ul> -->
     </aside>
     <div class="container">
         <div class="sidebar">
@@ -91,10 +91,10 @@
             <ul class="main-info">
                 <li class="someRight">
                     <dt><i class="icon-bookmark"></i>Basic info. 基本信息</dt>
-                    <dd><span>个人信息:</span> 薛海山 / 男 / 25岁</dd>
-                    <dd><span>工作经验:</span> 两年 </dd>
-                    <dd><span>常用ID:</span> Knight </dd>
-                    <dd><span>GitHub:</span> <a href="https://github.com/seamount-knight" target="_blank">https://github.com/seamount-knight</a></dd>
+                    <dd><span>个 人 信 息:</span> 薛海山 / 男 / 26岁</dd>
+                    <dd><span>学校 / 学历:</span> 内蒙古工业大学 / 本科学士 </dd>
+                    <dd><span>工 作 经 验:</span> 两年 </dd>
+                    <dd><span>GitHub主页:</span> <a href="https://github.com/seamount-knight" target="_blank">https://github.com/seamount-knight</a></dd>
                 </li>
                 <li>
                     <dt><i class="icon-bookmark"></i>Experience. 项目与工作经验</dt>
@@ -111,7 +111,7 @@
                         <div class="circle"></div>
                         <h4>定时任务功能模块开发</h4>
                         <p>
-                          基于k8s的job实现的平台中间件，用于被其他组件调用实现在k8s集群启动job的功能。
+                          基于k8s和mesos的job实现的平台中间件，用于被其他组件调用实现在k8s或者mesos集群启动job。
                         </p>
                       </li>
                       <li>
@@ -119,6 +119,23 @@
                         <h4>插件中心功能模块开发</h4>
                         <p>
                           实现平台第三方软件的自动化安装和使用。目前集成了sonarqube代码扫描和clair镜像扫描的自动化安装和部署。
+                        </p>
+                      </li>
+                      <li>
+                        <div class="circle"></div>
+                        <h4>多租户二期的迭代开发</h4>
+                        <p>
+                          主要实现了在k8s原生的namespace之上抽象一个租户概念，通过该顶层租户来隔离k8s集群之前的资源。
+                          用到的技术： Golang
+                        </p>
+                      </li>
+
+                      <li>
+                        <div class="circle"></div>
+                        <h4>alauda发行版的用户认证和rbac权限管理开发</h4>
+                        <p>
+                            基于k8s实现了用户登录以及权限管理。
+                            用到的技术： Golang， k8s用户认证和授权
                         </p>
                       </li>
                       <li>
@@ -134,21 +151,8 @@
                         <li>
                             <div class="circle"></div>
                             <h4>开发华为装备云测试系统</h4>
-                            <p>本项目的是构筑高并发、高可用生产测试云架构；用于支撑客户生产测试业务；通过将原有各产品的测试业务逻辑以服务形式提供，并在云端统一管理。</p>
-                            <p>我负责实现系统的部署方案，api网关的设计，人机交互微服务的开发和账号权限管理服务的开发。用到的技术主要有golang、etcd、kubernetes、docker和oracle。</p>
-
-                        </li>
-                        <li>
-                            <div class="circle"></div>
-                            <h4>高可用kubernetes集群的搭建</h4>
-                            <p>kubernetes是基于dockers容器的容器管理系统。能够实现容器服务的自动胡部署等功能。公司为了实现服务的快速部署和服务的高可用搭建了k8s高可用的集群。</p>
-
-                        </li>
-                        <li>
-                            <div class="circle"></div>
-                            <h4>基于内存的容器化Mongo复制集搭建</h4>
-                            <p>项目开发中有些微服务会产生大量的临时数据，为了实现数据的快速存储设计了该系统。为了保证mongo的高可用，本系统将mongo服务以容器的方式部署在k8s集群中，
-                              并通过多个mongo服务组成mongo复制集实现数据的同步。</p>
+                            <p>本项目是基于k8s做的一个华为路由设备测试系统， 该项目用于支撑客户生产测试业务；通过将原有各产品的测试业务逻辑以服务形式提供，并在云端统一管理。</p>
+                            <p>我负责实现k8s集群的的部署方案，和部分微服务的开发，用到的技术主要有golang、kubernetes、docker。</p>
                         </li>
                     </ul>
                     <h3>个人奖励</h3>
@@ -190,7 +194,7 @@
                         <li>
                             <div class="circle"></div>
                             <h4>语言</h4>
-                            <p> 熟悉 python, 会用golang。能够使用python和golang语言进行项目开发</p>
+                            <p> 熟悉 python, golang。能够使用python和golang语言进行项目开发</p>
                             <p> 熟悉django框架的使用 </p>
                             <p>了解 shell脚本语言。</p>
                         </li>
