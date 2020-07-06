@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="dist/css/style.min.css">
     <link rel="stylesheet" href="dist/css/fontello.min.css">
     <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
                 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
@@ -18,18 +18,12 @@
         ga('send', 'pageview');
 
     </script>
+
+
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.1/css/all.css" rel="stylesheet">
+    
 </head>
 <body>
-    <aside>
-        <!-- <ul>
-            <li>
-                <a href="https://seamount-knight.github.io/" target="_blank">Blog</a>
-            </li>
-            <li>
-                <a href="https://github.com/seamount-knight" target="_blank">GitHub</a>
-            </li>
-        </ul> -->
-    </aside>
     <div class="container">
         <div class="sidebar">
             <div class="title">
@@ -44,23 +38,31 @@
                     <dd><i class="icon-mail-alt"></i>邮箱: 15010828953@163.com</dd>
                     <dd><i class="icon-wechat"></i>微信: xhs3896</dd>
                     <dd><i class="icon-qq"></i>QQ: 630883975</dd>
+
+                    <!-- <dt><i class="fas fa-bookmark"></i> Contact. 联系方式</dt>
+                    <dd>电话: 15010828953
+                    <dd>邮箱: 15010828953@163.com</dd>
+                    <dd>微信: xhs3896</dd>
+                    <dd>QQ: 630883975</dd> -->
                 </li>
                 <li class="someRight">
                     <dt><i class="icon-bookmark"></i>Application. 应聘岗位</dt>
-                    <dd>后端工程师</dd>
+                    <!-- <dt><i class="fas fa-bookmark"></i> Application. 应聘岗位</dt> -->
+                    <dd>容器开发工程师</dd>
                 </li>
                 <li class="skill">
                     <dt><i class="icon-bookmark"></i>Tech. 技能点</dt>
-                    <dd>
-                        <div class="skill-name">python</div>
-                        <div class="skill-bar-wrap">
-                            <div class="skill-bar" style="width: 65%"></div>
-                        </div>
-                    </dd>
+                    <!-- <dt><i class="fas fa-bookmark"></i> Tech. 技能点</dt> -->
                     <dd>
                         <div class="skill-name">Golang</div>
                         <div class="skill-bar-wrap">
-                            <div class="skill-bar" style="width: 60%"></div>
+                            <div class="skill-bar" style="width: 80%"></div>
+                        </div>
+                    </dd>
+                    <dd>
+                        <div class="skill-name">kubernetes</div>
+                        <div class="skill-bar-wrap">
+                            <div class="skill-bar" style="width: 80%"></div>
                         </div>
                     </dd>
                     <dd>
@@ -69,17 +71,11 @@
                             <div class="skill-bar" style="width: 50%"></div>
                         </div>
                     </dd>
-                    <dd>
-                        <div class="skill-name">kubernetes</div>
-                        <div class="skill-bar-wrap">
-                            <div class="skill-bar" style="width: 30%"></div>
-                        </div>
-                    </dd>
                 </li>
             </ul>
             <div class="note">
-                <p>我是一个充满活力、对技术由衷热爱、善于发现问题的后端工程师。</p>
-                <p>我目前正在寻找后端工程师岗位，希望借此机会为贵司献上我的一点绵薄之力，快招我到碗里来吧！</p>
+                <p>我是一个充满活力、对技术由衷热爱、善于发现问题的后端容器开发工程师。</p>
+                <p>我目前正在寻找容器云相关工程师岗位，希望借此机会为贵司献上我的一点绵薄之力，快招我到碗里来吧！</p>
             </div>
 
             <div class="wximg">
@@ -91,14 +87,94 @@
             <ul class="main-info">
                 <li class="someRight">
                     <dt><i class="icon-bookmark"></i>Basic info. 基本信息</dt>
-                    <dd><span>个 人 信 息:</span> 薛海山 / 男 / 26岁</dd>
+                    <!-- <dt><i class="fas fa-bookmark"></i> Basic info. 基本信息</dt> -->
+                    <dd><span>个 人 信 息:</span> 薛海山 / 男 / 28岁</dd>
                     <dd><span>学校 / 学历:</span> 内蒙古工业大学 / 本科学士 </dd>
-                    <dd><span>工 作 经 验:</span> 两年 </dd>
-                    <dd><span>GitHub主页:</span> <a href="https://github.com/seamount-knight" target="_blank">https://github.com/seamount-knight</a></dd>
+                    <dd><span>工 作 经 验:</span> 4年 </dd>
+                    <dd><span>GitHub主页:</span> <a href="https://github.com/seamounts" target="_blank">https://github.com/seamounts</a></dd>
                 </li>
                 <li>
                     <dt><i class="icon-bookmark"></i>Experience. 项目与工作经验</dt>
-                    <h3>北京灵雀云(2017.3 - 至今)</h3>
+                    <!-- <dt><i class="fas fa-bookmark"></i> Experience. 项目与工作经验</dt> -->
+                    <h3>金山云（2018.11 - 至今）</h3>
+                    <ul class="exp">
+                        <li>
+                            <div class="circle"></div>
+                            <h4>集群稳定性和性能优化</h4>
+                            <p>集群稳定和性能优化是一个持续的工作，在金山云期间，为了提高稳定和性能我做了一系列的开发和测试，主要工作内容如下：</p>
+                            <p>对不同规模集群做了详细的压力的测试，确定发现了集群的各项性能瓶颈，并有针对性的做出了各项优化，如 etcd 和 kube 组件在不通规模下的启动参数的调整优化，
+                            etcd事件存储分离。自研组件的各项性能瓶颈的解决优化，云主机内核参数的优化、金山云网络、lb等平台瓶颈的解决和优化。
+                            </p>
+                            <p>
+                            目前通过一系列的优化，已经能够稳定支持一万节点规模的集群。
+                            </p>
+                        </li>
+                        <li>
+                            
+                            <div class="circle"></div>
+                            <h4>集群备份和恢复</h4>
+                            <p>
+                                对接Velero开发的支持金山云集群安全地备份，恢复和迁移的工具。 它既可以在本地运行，也可以在公共云中运行。 
+                                由在Kubernetes集群中作为部署运行的控制器和命令行界面（CLI）组成，
+                                DevOps团队和平台操作员可使用该命令行界面配置计划的备份，触发临时备份，执行还原等。
+                            </p>
+                        </li>
+
+                        <li>
+                            <div class="circle"></div>
+                            <h4>集群自动化升级</h4>
+                            <p>
+                                集群升级控制器，负责实现集群的自动化升级，支持多种升级策略，升级过程不会影响集群运行，对用户业务服务的影响很小。
+                                升级过程可控，升级失败会暂停升级，可支持继续升级或回滚集群。
+                            </p>
+                        </li>
+                        <li>
+                            <div class="circle"></div>
+                            <h4>多云纳管</h4>
+                            <p>
+                                开发了多云纳管平台，能够将其他云厂商集群接入金山云控制台统一管理，整合公有云,私有云 和 IDC自建集群, 提供了一致的运维管理界面。
+                                提供多层次的安全访问能力，允许用户无需公网即可连接用户集群。
+                                并通过联邦来实现多集群的统一调度管理，实现跨集群的资源同步和跨级群的服务发现。
+                            </p>
+                        </li>
+
+                        <li>
+                            <div class="circle"></div>
+                            <h4>容器平台国产化</h4>
+                            <p>
+                            
+                            </p>
+                        </li>
+
+                        <li>
+                            <div class="circle"></div>
+                            <h4>集群支持ipv6</h4>
+                            <p>
+                            
+                            </p>
+                        </li>
+
+                        <li>
+                            <div class="circle"></div>
+                            <h4>其他插件开发</h4>
+                            <li>
+                                金山云EBS CSI插件开发
+                            </li>
+                            <li>
+                                集群资源预留动态注入插件
+                            </li>
+                        </li>
+                    </ul>
+
+                    <h3>明日虫洞（2018.7 - 2018.11）</h3>
+                    <ul class="exp">
+                        <li>
+                            <div class="circle"></div>
+                            <h4>短视频业务后端开发</h4>
+                        </li>
+                    </ul>
+
+                    <h3>北京灵雀云(2017.3 - 2018.7)</h3>
                     <ul class="exp">
                       <li>
                         <div class="circle"></div>
@@ -109,94 +185,35 @@
                       </li>
                       <li>
                         <div class="circle"></div>
-                        <h4>定时任务功能模块开发</h4>
-                        <p>
-                          基于k8s和mesos的job实现的平台中间件，用于被其他组件调用实现在k8s或者mesos集群启动job。
-                        </p>
-                      </li>
-                      <li>
-                        <div class="circle"></div>
-                        <h4>插件中心功能模块开发</h4>
-                        <p>
-                          实现平台第三方软件的自动化安装和使用。目前集成了sonarqube代码扫描和clair镜像扫描的自动化安装和部署。
-                        </p>
-                      </li>
-                      <li>
-                        <div class="circle"></div>
-                        <h4>多租户二期的迭代开发</h4>
-                        <p>
-                          主要实现了在k8s原生的namespace之上抽象一个租户概念，通过该顶层租户来隔离k8s集群之前的资源。
-                          用到的技术： Golang
-                        </p>
-                      </li>
-
-                      <li>
-                        <div class="circle"></div>
                         <h4>alauda发行版的用户认证和rbac权限管理开发</h4>
                         <p>
                             基于k8s实现了用户登录以及权限管理。
                             用到的技术： Golang， k8s用户认证和授权
                         </p>
                       </li>
-                      <li>
-                        <div class="circle"></div>
-                        <h4>其他</h4>
-                        <p>
-                          系统bug的修复和功能稳定性的优化。
-                        </p>
-                      </li>
                     </ul>
-                    <h3>大连东软集团（2015.11 - 2016.12）</h3>
+                    <h3>大连东软集团实习（2015.11 - 2016.12）</h3>
+
+                    <dt><i class="icon-bookmark"></i>Medal. 个人奖励</dt>
+                    <!-- <dt><i class="fas fa-bookmark"></i> Medal. 个人奖励</dt> -->
                     <ul class="exp">
-                        <li>
-                            <div class="circle"></div>
-                            <h4>开发华为装备云测试系统</h4>
-                            <p>本项目是基于k8s做的一个华为路由设备测试系统， 该项目用于支撑客户生产测试业务；通过将原有各产品的测试业务逻辑以服务形式提供，并在云端统一管理。</p>
-                            <p>我负责实现k8s集群的的部署方案，和部分微服务的开发，用到的技术主要有golang、kubernetes、docker。</p>
-                        </li>
-                    </ul>
-                    <h3>个人奖励</h3>
-                    <ul class="exp">
-                      <li>
-                          <div class="circle"></div>
-                          <h4>
-                              2016年度东软集团智能应用事业部“优秀新员工”奖 （2017.1.19）
-                          </h4>
-                          <p> 在2016年的工作中，凭借个人的勤奋、好学以及技术能力获得了公司的表彰 (*^_^*) </p>
-                      </li>
                         <li>
                             <div class="circle"></div>
                             <h4>
-                                全国大学生物联网设计竞赛(赛佰特杯)一等奖 （2015.08）
+                                Kubernetes 管理员认证（CKA）（2019.7）
                             </h4>
-                            <p>大学期间与同学共同开发的智慧农业系统获得了赛佰特杯全国一等奖。在项目中我主要参与ARM终端QT界面的开发</p>
                         </li>
                         <li>
                             <div class="circle"></div>
                             <h4>
-                                RoboCup全国机器人大赛一等奖 (2015-09)
+                                其他
                             </h4>
-                            <p> 大学期间参加的机器人大赛获得一等奖，我主要编写c语言来控制</p>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <dt><i class="icon-bookmark"></i>Skill. 技能清单</dt>
-                    <h3>后端</h3>
-                    <ul class="exp">
-                        <li>
-                            <div class="circle"></div>
-                            <h4>环境</h4>
-                            <p>熟悉 Linux 开发环境、 Linux shell命令，三年 Linux 日常使用经验</p>
-                            <p>了解 kubernetes集群的搭建及使用、 熟悉docker的使用</p>
-                            <p>掌握 Git 的使用</p>
-                        </li>
-                        <li>
-                            <div class="circle"></div>
-                            <h4>语言</h4>
-                            <p> 熟悉 python, golang。能够使用python和golang语言进行项目开发</p>
-                            <p> 熟悉django框架的使用 </p>
-                            <p>了解 shell脚本语言。</p>
+                            <li>
+                                全国大学生物联网设计竞赛(赛佰特杯)一等奖 
+                            </li>
+                            <li>
+                                RoboCup全国机器人大赛一等奖
+                            </li>
                         </li>
                     </ul>
                 </li>
