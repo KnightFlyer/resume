@@ -23,20 +23,17 @@
         <div class="sidebar">
             <div class="title">
                 <img src="img/head.png">
-                <h1>薛海山的简历</h1>
-                <h2>"Write the Code. Change the World."</h2>
+                <h1>薛海山</h1>
+                <!-- <h2>"Write the Code. Change the World."</h2> -->
             </div>
             <ul class="side-info">
                 <li class="someRight">
                     <dt><i class="icon-bookmark"></i>Contact. 联系方式</dt>
                     <dd><i class="icon-phone-1"></i>电话: 15010828953
                     <dd><i class="icon-mail-alt"></i>邮箱: 15010828953@163.com</dd>
-                    <dd><i class="icon-wechat"></i>微信: xhs3896</dd>
-                    <dd><i class="icon-qq"></i>QQ: 630883975</dd>
-                </li>
                 <li class="someRight">
                     <dt><i class="icon-bookmark"></i>Application. 应聘岗位</dt>
-                    <dd>容器开发工程师</dd>
+                    <dd>容器高级开发工程师</dd>
                 </li>
                 <li class="skill">
                     <dt><i class="icon-bookmark"></i>Tech. 技能点</dt>
@@ -57,9 +54,16 @@
                         <div class="skill-bar-wrap">
                             <div class="skill-bar" style="width: 50%"></div>
                         </div>
-                    </dd>
+                    </dd>                    
                 </li>
             </ul>
+             <div class="note">
+                <p>在k8s领域有4年开发经验，主要使用语言为 goalng，python也使用过一段时间。主要工作经历是灵雀云和金山云，
+                    在灵雀期间主要参与devops产品开发。
+                    在金山云主要负责kce容器平台的功能性开发，也主导负责了容器集群整体的稳定性和性能的优化改进，
+                    对支持大规模单集群提供了技术保证和数据支撑。期间也独立负责了多云管理平台开发。
+                </p>
+            </div>
             <!-- <div class="note">
                 <p>我是一个充满活力、对技术由衷热爱、善于发现问题的后端容器开发工程师。</p>
                 <p>我目前正在寻找容器云相关工程师岗位，希望借此机会为贵司献上我的一点绵薄之力，快招我到碗里来吧！</p>
@@ -75,7 +79,7 @@
                 <li class="someRight">
                     <dt><i class="icon-bookmark"></i>Basic info. 基本信息</dt>
                     <dd><span>个 人 信 息:</span> 薛海山 / 男 / 28岁</dd>
-                    <dd><span>学校 / 学历:</span> 内蒙古工业大学 / 本科学士 </dd>
+                    <dd><span>学校 / 学历:</span> 内蒙古工业大学 (2012-2016) / 本科学士 </dd>
                     <dd><span>工 作 经 验:</span> 4年 </dd>
                     <dd><span>GitHub主页:</span> <a href="https://github.com/seamounts" target="_blank">https://github.com/seamounts</a></dd>
                     <dd><span>专 业 证 书:</span> CKA（certified kubernetes administrator） </dd>
@@ -86,27 +90,44 @@
                     <ul class="exp">
                         <li>
                             <div class="circle"></div>
-                            <h4>集群稳定性和性能优化</h4>
-                            <p>集群稳定和性能优化是一个持续的工作，在金山云期间，为了提高稳定和性能我做了一系列的开发和测试，主要工作内容如下：</p>
-                            <p>对不同规模集群做了详细的压力的测试，确定发现了集群的各项性能瓶颈，并有针对性的做出了各项优化，如 etcd 和 kube 组件在大规模集群下启动参数的调整优化，
-                            数据存储分离，flannel网络优化，自研组件的各项性能瓶颈的解决优化。期间也摸清了金山云平台级别的种种的限制，并总结了集群的最佳实践。
+                            <h4>大规模集群方案落地</h4>
+                            <p>独立主导了kce容器平台大规模集群方案落地。通过对底层基础服务架构的调整，集群网络方案和etcd部署方案的改进，k8s核心组件关键参数的优化，
+                                以及产品形态的改进，大幅提高了集群的稳定性，实现了单集群稳定支持5000节点，15万pod，最高可支持1万节点，30万pod。
                             </p>
                             <p>
-                            目前金山云集群已经能够稳定支持 5000 节点规模，15万规模pod，并在15万规模pod压力下，集群 api 响应99值基本在百毫秒以内，pod调度性能能够稳定在 100pod/s。
-                            根据测试数据，理论上可以支持到 10000 规模节点。
+                                负责设计了etcd分离存储方案，实现了部署容器集群时动态可配置etcd部署模型，通过etcd分离存储来减少单一etcd集群的访问压力。
+                            </p>
+                            <p>
+                                开发了资源预留动态注入，避免了集群pod耗尽系统资源。也改进了集群网络方案的设计，改善了原有网络性能等。
                             </p>
                         </li>
 
                         <li>
                             <div class="circle"></div>
-                            <h4>多云管理平台</h4>
+                            <h4>kce多云管理</h4>
                             <p>
-                                开发了多云纳管服务，其核心是基于 websocket协议实现的隧道技术，打通了从金山云到被纳管集群的链路，通过建立的隧道连接将被纳管集群接入到金山云平台管理。
-                                实现了对其他云厂商集群，包括公有云,私有云以及客户自建集群提供一致的运维管理界面。
+                                独立负责开发多云纳管平台，实现了对其他云厂商集群，包括公有云,私有云以及客户自建集群提供一致的运维管理界面。支持跨云多集群的统一资源调度
+                                和跨集群服务发现。
                             </p>
                             <p>
-                                多云管理除了接入集群之外，还需要支持跨云多集群的统一资源调度和跨集群服务发现，目前关于跨集群调度的管理主要基于 kubernetes federation v2 实现。
-                                核心理念是对原生k8s资源的联邦化，并通过连邦化资源的管理实现k8s资源的跨集群部署和调度。跨集群服务发现基于 external dns 架构实现。
+                                对于集群的接入管理其核心通过在被纳管集群部署容器化组件agent，借由agent打通金山云容器服务到客户集群的网络隧道，
+                                并通过隧道连接将被纳管集群接入到金山云平台管理。
+                            </p>
+                            <p>
+                                由于纳管服务是维护隧道连接的有状态服务， 为了解决部署高可用的难点，实现了纳管服务多实例自建集群网络模型，
+                                并通过集群服务发现机制实现了纳管服务集群的动态扩缩容。
+                            </p>
+                            <p>
+                                跨集群资源调度主要基于 kubernetes federation v2 实现。
+                                核心理念是对原生k8s资源联邦化，通过对连邦化资源的管理实现k8s资源的跨集群部署和调度。跨集群服务发现基于 external dns 架构实现。
+                            </p>
+                        </li>
+
+                        <li>
+                            <div class="circle"></div>
+                            <h4>容器 CSI 存储开发</h4>
+                            <p>
+                                负责开发了集群CSI存储模块，基于CSI接口规范对接了金山云EBS存储，实现了容器集群pv\pvc对金山云EBS快存储的支持。
                             </p>
                         </li>
 
@@ -146,12 +167,6 @@
                             <h4>其他...</h4>
                             <li>
                                 1. 容器平台国产化（容器镜像和业务服务对arm64架构的兼容改造）
-                            </li>
-                            <li>
-                                2. 金山云 cloud controller provider（核心是基于k8s控制器模式开发，对接金山云LB）
-                            </li>
-                            <li>
-                                3. 金山云 EBS CSI 存储开发 （基于k8s csi接口开发，对接金山云ebs存储）
                             </li>
                         </li>
                     </ul>
@@ -211,3 +226,4 @@
     </footer> -->
 </body>
 </html>
+    
